@@ -6,13 +6,12 @@ function Projects() {
     <main>
       <section className="bg-main-bg px-4 py-24 text-main-text">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.36em] text-red">
-            Selected projects
-          </p>
-
           <h1 className="font-display text-[4.8rem] font-bold uppercase leading-[0.8] text-dark md:text-[7rem]">
             Projects
           </h1>
+          <p className="mt-6 max-w-2xl text-base font-medium leading-7 md:text-lg">
+            A selection of projects where I combine design, code and problem solving.
+          </p>
         </div>
       </section>
 

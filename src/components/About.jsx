@@ -11,13 +11,16 @@ function About() {
 
           <h2 className="font-display text-[4.8rem] font-bold leading-[0.8] text-dark md:text-[7.4rem]">
             Hello,
-            <span className="block">I&apos;m Laura</span>
+          </h2>
+
+          <h2 className="font-display text-[4.8rem] font-bold leading-[0.95] text-dark md:text-[7.4rem]">
+            I&apos;m Laura
           </h2>
 
           <div className="mt-8 max-w-xl space-y-4 text-base font-medium leading-7 text-ink md:text-lg">
             <p>
-              I&apos;m a junior frontend developer who has just finished her
-              studies and is ready to keep learning through real projects.
+              A newly graduated junior frontend developer who is ready to dive into the
+              real world to expand her knowledge and experience through exciting projects.
             </p>
             <p>
               I like building interfaces that feel clear, useful and full of

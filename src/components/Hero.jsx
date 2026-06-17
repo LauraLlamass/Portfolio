@@ -3,10 +3,6 @@ function Hero() {
     <section className="bg-dark-bg px-4 pb-8 pt-20 text-dark-text">
       <div className="mx-auto max-w-6xl">
         <div className="relative h-[430px] overflow-hidden md:h-[500px]">
-          <p className="absolute left-[7%] top-[7%] z-50 text-xs font-bold uppercase tracking-[0.32em] text-orange md:text-sm">
-            Personal portfolio
-          </p>
-
           <div className="absolute left-[7%] top-[18%] z-20 h-[330px] w-[430px] bg-orange-bg md:h-[390px] md:w-[400px]">
             <div className="flex h-full items-center justify-center text-xs font-bold uppercase tracking-[0.2em] text-orange-text">
               Illustration

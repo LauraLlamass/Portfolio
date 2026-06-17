@@ -14,11 +14,14 @@ function ProjectCard({ index, project }) {
     ? 'border-cream text-cream'
     : 'border-dark text-dark'
   const imageBorder = isdark ? 'border-cream' : 'border-dark'
+  const imageShadow = isdark
+    ? 'shadow-[8px_8px_0_rgba(255,245,220,0.28)]'
+    : 'shadow-[8px_8px_0_rgba(0,0,0,0.18)]'
 
   return (
-    <section className={`${sectionClasses} px-4 py-16 md:py-20`}>
+    <section className={`${sectionClasses} px-4 py-14 md:py-20`}>
       <div className="mx-auto max-w-6xl">
-        <article className="grid gap-8 md:grid-cols-[0.75fr_1.25fr] md:items-start">
+        <article className="grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:items-start">
           <div>
             <p className={`text-xs font-bold uppercase tracking-[0.2em] ${headingColor}`}>
               Project 0{index + 1} / {project.status}
@@ -33,14 +36,14 @@ function ProjectCard({ index, project }) {
               {project.description}
             </p>
 
-            <p className="mt-4 max-w-3xl text-sm font-bold leading-6">
+            <p className="mt-3 max-w-3xl text-sm font-bold leading-6">
               {project.impact}
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2">
               {project.technologies.map((technology) => (
                 <span
-                  className={`${tagClasses} rounded-full px-3 py-2 text-xs font-bold uppercase tracking-[0.08em]`}
+                  className={`${tagClasses} rounded-md px-3 py-2 text-xs font-bold uppercase tracking-[0.08em]`}
                   key={technology}
                 >
                   {technology}
@@ -48,13 +51,13 @@ function ProjectCard({ index, project }) {
               ))}
             </div>
 
-            <p className="mt-6 max-w-3xl text-sm font-semibold leading-6">
+            <p className="mt-5 max-w-3xl text-sm font-semibold leading-6">
               {project.learning}
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-5 flex flex-wrap gap-3">
               <a
-                className={`${primaryLinkClasses} rounded-full px-5 py-3 text-sm font-bold`}
+                className={`${primaryLinkClasses} rounded-full px-5 py-3 text-sm font-bold transition-transform hover:-translate-y-1`}
                 href={project.github}
                 rel="noreferrer"
                 target="_blank"
@@ -63,7 +66,7 @@ function ProjectCard({ index, project }) {
               </a>
               {project.demo && (
                 <a
-                  className={`${secondaryLinkClasses} rounded-full border-2 px-5 py-3 text-sm font-bold`}
+                  className={`${secondaryLinkClasses} rounded-full border-2 px-5 py-3 text-sm font-bold transition-transform hover:-translate-y-1`}
                   href={project.demo}
                   rel="noreferrer"
                   target="_blank"
@@ -76,11 +79,11 @@ function ProjectCard({ index, project }) {
         </article>
 
         {project.images && (
-          <div className="mt-12 grid items-start gap-4 md:grid-cols-2">
+          <div className="mt-8 grid items-start gap-4 md:grid-cols-2">
             {project.images.map((image) => (
               <img
                 alt={image.alt}
-                className={`${imageBorder} w-full border-2 object-contain`}
+                className={`${imageBorder} ${imageShadow} w-full border-2 object-contain`}
                 key={image.src}
                 src={image.src}
               />
