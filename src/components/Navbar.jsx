@@ -11,13 +11,13 @@ function Navbar({ currentPath = '/' }) {
       : 'transition hover:text-orange focus-visible:text-orange'
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full px-6 py-4">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-card-bg px-5 py-3 text-card-text">
-        <a className="font-display text-lg font-bold" href="/">
+    <header className="fixed left-0 top-0 z-50 w-full px-3 py-3 sm:px-6 sm:py-4">
+      <nav className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-3 rounded-3xl bg-card-bg px-4 py-3 text-card-text shadow-[0_10px_30px_rgba(36,21,24,0.12)] sm:justify-between sm:rounded-full sm:px-5">
+        <a className="font-display text-base font-bold sm:text-lg" href="/">
           Laura Llamas
         </a>
 
-        <div className="flex items-center gap-5 text-sm font-semibold">
+        <div className="flex items-center gap-4 text-xs font-semibold sm:gap-5 sm:text-sm">
           {links.map((link) => (
             <a
               aria-current={link.href === currentPath ? 'page' : undefined}

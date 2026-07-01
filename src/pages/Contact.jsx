@@ -1,3 +1,6 @@
+import ContactItem from '../components/ContactItem'
+import { contactLinks } from '../data/contactLinks'
+
 function Contact() {
   return (
     <main className="min-h-screen bg-main-bg px-4 py-24 text-main-text">
@@ -30,70 +33,22 @@ function Contact() {
         </div>
 
         <div className="relative pt-4 md:pt-20">
-          <p className="font-display text-[4.6rem] font-bold uppercase leading-[0.78] text-transparent md:text-[6rem]">
-            <span className="block [-webkit-text-stroke:1px_var(--color-orange)]">
-              Contact
-            </span>
-            <span className="block [-webkit-text-stroke:1px_var(--color-orange)]">
-              Contact
-            </span>
-            <span className="block [-webkit-text-stroke:1px_var(--color-orange)]">
-              Contact
-            </span>
-          </p>
 
           <div className="mt-10 grid gap-4">
-            <ContactItem
-              label="Email"
-              text="LauraLlamasRod@gmail.com"
-              href="mailto:LauraLlamasRod@gmail.com"
-            />
-            <ContactItem
-              label="GitHub"
-              text="github.com/LauraLlamass"
-              href="https://github.com/LauraLlamass"
-            />
-            <ContactItem
-              label="LinkedIn"
-              text="linkedin.com/in/laurallr"
-              href="https://www.linkedin.com/in/laurallr/"
-            />
-            <ContactItem
-              label="Resume"
-              text="View resume section"
-              href="/#resume"
-            />
+            {contactLinks.map((contactLink) => (
+              <ContactItem
+                download={contactLink.download}
+                href={contactLink.href}
+                key={contactLink.label}
+                label={contactLink.label}
+                text={contactLink.text}
+              />
+            ))}
           </div>
         </div>
       </section>
     </main>
   )
-}
-
-function ContactItem({ label, text, href }) {
-  const content = (
-    <>
-      <p className="text-xs font-bold uppercase tracking-[0.24em] text-red">
-        {label}
-      </p>
-      <p className="mt-2 font-display text-2xl font-bold text-dark">{text}</p>
-    </>
-  )
-
-  if (href) {
-    return (
-      <a
-        className="block bg-card-bg p-5 text-card-text transition hover:bg-orange-bg hover:text-orange-text"
-        href={href}
-        rel={href.startsWith('http') ? 'noreferrer' : undefined}
-        target={href.startsWith('http') ? '_blank' : undefined}
-      >
-        {content}
-      </a>
-    )
-  }
-
-  return <div className="bg-card-bg p-5 text-card-text">{content}</div>
 }
 
 export default Contact

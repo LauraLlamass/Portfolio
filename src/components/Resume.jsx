@@ -66,20 +66,8 @@ function Resume() {
         </div>
 
         <div>
-          <p className="ml-12 font-display text-[4.6rem] font-bold uppercase leading-[0.78] text-transparent md:ml-20 md:text-[5.8rem]">
-            <span className="block [-webkit-text-stroke:1px_var(--color-orange)]">
-              Resume
-            </span>
-            <span className="block [-webkit-text-stroke:1px_var(--color-orange)]">
-              Resume
-            </span>
-            <span className="block [-webkit-text-stroke:1px_var(--color-orange)]">
-              Resume
-            </span>
-          </p>
-
-          <div className="mt-14 w-full max-w-md text-dark-text md:ml-12 md:mt-20">
-            <p className="font-display text-4xl font-bold text-orange">
+          <div className="mt-10 w-full max-w-md text-dark-text sm:mt-14 md:ml-12 md:mt-20">
+            <p className="font-display text-3xl font-bold text-orange sm:text-4xl">
               Technical skills
             </p>
 
@@ -89,7 +77,7 @@ function Resume() {
             </div>
 
             <div className="mt-8">
-              <p className="font-display text-4xl font-bold text-orange">
+              <p className="font-display text-3xl font-bold text-orange sm:text-4xl">
                 Language
               </p>
 
@@ -126,16 +114,19 @@ function TimelineSection({ title, items, tags = [], variant = 'dark' }) {
       </h2>
 
       <div className="mt-5 space-y-5">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <article
-            className="grid grid-cols-[1.25rem_5.5rem_1fr] gap-3"
+            className="grid grid-cols-[1.5rem_1fr] gap-3 sm:grid-cols-[1.5rem_5.5rem_1fr]"
             key={`${item.date}-${item.title}`}
           >
-            <span className={`mt-1 text-2xl font-black leading-none ${iconColor}`}>
-              +
+            <span className="relative flex justify-center pt-1">
+              <span className={`h-3 w-3 rounded-full ${isOrange ? 'bg-cream' : 'bg-orange'}`} />
+              {index < items.length - 1 && (
+                <span className={`absolute top-5 h-[calc(100%+0.5rem)] w-0.5 ${isOrange ? 'bg-cream/60' : 'bg-orange/60'}`} />
+              )}
             </span>
             <p className="pt-1 text-sm font-black">{item.date}</p>
-            <div>
+            <div className="col-span-2 pl-9 sm:col-span-1 sm:pl-0">
               <h3 className="font-display text-xl font-bold leading-tight">
                 {item.title}
               </h3>
