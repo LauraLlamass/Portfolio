@@ -3,12 +3,10 @@ import { contactLinks } from '../data/contactLinks'
 
 function Contact() {
   return (
-    <main className="min-h-screen bg-main-bg px-4 py-24 text-main-text">
+    <main className="h-dvh overflow-y-hidden bg-main-bg px-4 py-24 text-main-text">
       <section className="relative mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.9fr_1.1fr] md:items-start">
         <div>
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.36em] text-red">
-            Contact
-          </p>
+          
 
           <h1 className="font-display text-[4.8rem] font-bold uppercase leading-[0.8] text-dark md:text-[7rem]">
             Let&apos;s talk

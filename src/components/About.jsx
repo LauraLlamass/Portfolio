@@ -20,9 +20,7 @@ function About() {
     <section id="about" className="bg-main-bg px-4 py-12 text-main-text md:py-16">
       <div className="relative mx-auto grid max-w-6xl gap-12 md:grid-cols-[1.08fr_0.92fr] md:items-center">
         <div className="relative z-10">
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.28em] text-red sm:tracking-[0.36em]">
-            About me
-          </p>
+         
 
           <h2 className="font-display text-[3.8rem] font-bold leading-[0.82] text-dark sm:text-[4.8rem] md:text-[7.4rem]">
             Hello,

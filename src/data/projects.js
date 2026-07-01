@@ -61,16 +61,26 @@ export const projects = [
       'Working with a React frontend, routing, TypeScript structure and a backend with Node.js and Express.',
   },
   {
-    name: 'Moodboard',
+    name: 'Laura Keres',
     status: 'In progress',
     description:
-      'Creative moodboard app for saving aesthetic boards for personal projects, inspiration and daily visual moods.',
+    'Personal author website designed to present my writing, published work and creative identity in a clear and atmospheric experience.',
     impact:
-      'I am focusing on reusable UI components, responsive composition and a more interactive visual editing experience.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/LauraLlamass/moodboard.git',
+    'I am designing and developing the complete visual identity, responsive layout and content structure from the perspective of both creator and user.',
+  technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Responsive Design'],
+    github: 'https://github.com/LauraLlamass/LauraKeres.git',
     demo: '',
-    learning:
-      'Building a more visual and interactive frontend app, organizing reusable components and improving UI composition with Tailwind CSS.',
-  },
+     images: [
+    {
+      src: '',
+      alt: '',
+    },
+    {
+      src: '',
+      alt: '',
+    },
+  ],
+  learning:
+    'Translating a personal creative identity into an accessible interface, creating a cohesive visual system and designing responsively across devices.',
+}
 ]

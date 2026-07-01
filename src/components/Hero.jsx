@@ -3,9 +3,7 @@ function Hero() {
     <section className="bg-dark-bg px-4 pb-12 pt-28 text-dark-text sm:pt-24 md:pb-16">
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.05fr_0.95fr] md:items-center">
         <div className="relative z-10">
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.28em] text-orange sm:tracking-[0.36em]">
-            Junior Frontend Developer
-          </p>
+          
 
           <h1 className="max-w-[8ch] font-display text-[4rem] font-bold uppercase leading-[0.82] text-cream sm:text-[5.4rem] md:text-[7rem]">
             Laura Llamas

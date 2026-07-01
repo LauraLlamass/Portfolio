@@ -17,6 +17,10 @@ function Navbar({ currentPath = '/' }) {
           Laura Llamas
         </a>
 
+        <a className="font-display text-base text:center font-bold sm:text-lg">
+          Junior Frontend Developer
+        </a>
+
         <div className="flex items-center gap-4 text-xs font-semibold sm:gap-5 sm:text-sm">
           {links.map((link) => (
             <a
