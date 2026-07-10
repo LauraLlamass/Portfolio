@@ -1,11 +1,46 @@
 export const projects = [
   {
-    name: 'Carpinteria Las Artesanas',
+    name: 'Ann C. Kigal',
+    status: 'Finished MVP',
+    description:
+      'Professional website for a Valencian writer, illustrator and philologist, created to present her personal brand, her book Dos legados de furia, the fantasy world of Ídreka and her creative services.',
+    impact:
+      'For this paid client project, I defined the content architecture and designed and developed an accessible, responsive editorial experience that connects her work, services and contact paths within one cohesive visual identity.',
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'UX/UI Design',
+      'Content Architecture',
+      'Responsive Design',
+      'Accessibility',
+      'Image Optimization',
+      'SEO Metadata',
+      'Vercel',
+    ],
+    github: 'https://github.com/LauraLlamass/ann_kigal.git',
+    demo: 'https://ann-kigal.vercel.app/',
+    images: [
+      {
+        src: '/images/projects/ann-kigal-home.png',
+        alt: 'Editorial homepage designed for writer and illustrator Ann C. Kigal',
+      },
+      {
+        src: '/images/projects/ann-kigal-book.png',
+        alt: 'Dos legados de furia book page within the fantasy world of Ídreka',
+      },
+    ],
+    learning:
+      'Delivering an end-to-end website for a real client, from content strategy and visual direction to a production-ready frontend. The newsletter is planned for a later phase.',
+  },
+  {
+    name: 'Carpintería Las Artesanas',
     status: 'Finished',
     description:
-      'Business web app for a carpentry company, including a custom inventory system for managing company products and internal data.',
+      'Business web application that combines a public website for a carpentry company with a custom private inventory for managing products and internal data.',
     impact:
-      'I built protected inventory views, authentication flows and a public landing page connected to the business needs.',
+      'I translated the company workflows into protected inventory views, implemented authentication with OAuth and built a public-facing experience tailored to the business.',
     technologies: [
       'Next.js 15',
       'App Router',
@@ -23,23 +58,23 @@ export const projects = [
     images: [
       {
         src: '/images/projects/carpinteria-inventory.png',
-        alt: 'Inventory dashboard for Carpinteria Las Artesanas',
+        alt: 'Inventory dashboard for Carpintería Las Artesanas',
       },
       {
         src: '/images/projects/carpinteria-home.png',
-        alt: 'Landing page for Carpinteria Las Artesanas',
+        alt: 'Landing page for Carpintería Las Artesanas',
       },
     ],
     learning:
-      'Building a full Next.js app with authentication, protected areas, server components, SEO metadata and deployment with Vercel.',
+      'Architecting public and private areas within one Next.js application, including secure access, server-rendered interfaces and a production deployment.',
   },
   {
     name: 'The Black Cat Brew',
     status: 'Finished MVP',
     description:
-      'Coffee search app where users can explore coffee information and take notes about origin, acidity and intensity.',
+      'Full-stack coffee discovery app where users can search for coffees and organize tasting notes by origin, acidity and intensity.',
     impact:
-      'I worked on the React interface, routing structure and backend connection for searching and organizing coffee notes.',
+      'I built the typed React interface and routing structure, then connected it to an Express backend to support coffee searches and structured tasting notes.',
     technologies: [
       'React',
       'TypeScript',
@@ -58,29 +93,6 @@ export const projects = [
       },
     ],
     learning:
-      'Working with a React frontend, routing, TypeScript structure and a backend with Node.js and Express.',
+      'Coordinating a typed frontend with an API, keeping navigation, data flow and the search experience consistent across the application.',
   },
-  {
-    name: 'Laura Keres',
-    status: 'In progress',
-    description:
-    'Personal author website designed to present my writing, published work and creative identity in a clear and atmospheric experience.',
-    impact:
-    'I am designing and developing the complete visual identity, responsive layout and content structure from the perspective of both creator and user.',
-  technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Responsive Design'],
-    github: 'https://github.com/LauraLlamass/LauraKeres.git',
-    demo: '',
-     images: [
-    {
-      src: '',
-      alt: '',
-    },
-    {
-      src: '',
-      alt: '',
-    },
-  ],
-  learning:
-    'Translating a personal creative identity into an accessible interface, creating a cohesive visual system and designing responsively across devices.',
-}
 ]
