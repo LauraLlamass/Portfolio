@@ -70,7 +70,7 @@ export const projects = [
   },
   {
     name: 'The Black Cat Brew',
-    status: 'Finished MVP',
+    status: 'MVP completed',
     description:
       'Full-stack coffee discovery app where users can search for coffees and organize tasting notes by origin, acidity and intensity.',
     impact:
@@ -88,8 +88,12 @@ export const projects = [
     demo: 'https://the-black-cat-brew.vercel.app/',
     images: [
       {
+        src: '/images/projects/black-cat-home.png',
+        alt: 'The Black Cat Brew homepage with featured coffees and original cat illustrations',
+      },
+      {
         src: '/images/projects/black-cat-search.png',
-        alt: 'Coffee search page from The Black Cat Brew',
+        alt: 'Coffee catalogue with origin, intensity and acidity filters in The Black Cat Brew',
       },
     ],
     learning:
