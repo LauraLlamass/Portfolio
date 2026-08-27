@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
@@ -73,6 +74,7 @@ function App() {
     <>
       <Navbar currentPath={route.path} />
       {pages[route.path] || <Home />}
+      <Analytics />
     </>
   )
 }
